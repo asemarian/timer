@@ -49,13 +49,16 @@ resetButton.addEventListener("click", resetTimer);
 function resetTimer() {
     clearInterval(interval);
     enableEditing();
-    updateTime();
     updateProgressBar(1, 1);
     enableOrDisableStartButton();
     removeAnimation();
 
     isPaused = true;
     hours = minutes = seconds = 0;
+    updateTime();
+    validatePattern(hoursField, "hours");
+    validatePattern(minutesField, "minutes");
+    validatePattern(secondsField, "seconds");
     totalRemainingTime = totalTime = null;
     timerDoneAudio.pause();
     timerDoneAudio.currentTime = 0;
