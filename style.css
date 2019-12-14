@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=ZCOOL+QingKe+HuangYou&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
 
 * {
     margin: 0;
@@ -17,7 +17,7 @@ html {
     --black: #000000;
     --red: #D83C27BF;
     font-size: 62.5%;
-    font-family: "ZCOOL QingKe HuangYou", monospace;
+    font-family: "Share Tech Mono", monospace;
 }
 
 body {
@@ -51,6 +51,7 @@ hr {
 #clock>.colon {
     font-family: sans-serif;
     font-size: 24vw;
+    vertical-align: 7%;
 }
 
 #clock>:not(.colon) {
@@ -58,7 +59,7 @@ hr {
     cursor: default;
     caret-color: transparent;
     display: inline-block;
-    width: 28vw;
+    width: 27vw;
     border: 0.35vw solid transparent;
     font-size: 24vw;
 }
@@ -81,6 +82,7 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 1vw;
 }
 
 button {
