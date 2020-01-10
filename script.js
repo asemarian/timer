@@ -135,7 +135,7 @@ function enableEditing() {
 
 function disableStartButton() {
     startButton.disabled = true;
-    startButton.style.opacity = "0.5";
+    startButton.style.opacity = "0.3";
     startButton.style.cursor = "not-allowed";
 }
 

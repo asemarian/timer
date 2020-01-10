@@ -7,14 +7,14 @@
 }
 
 ::selection {
-    background-color: var(--black);
-    color: var(--green);
+    background-color: var(--primary);
+    color: var(--secondary);
 }
 
 html {
-    --green: #4AF626;
-    --dark-green: #45d827;
-    --black: #000000;
+    --secondary: #000000;
+    --transparent: #45d72826;
+    --primary: #4AF626;
     --red: #D83C27BF;
     font-size: 62.5%;
     font-family: "Share Tech Mono", monospace;
@@ -22,8 +22,8 @@ html {
 
 body {
     height: 100vh;
-    color: var(--black);
-    background-color: var(--green);
+    color: var(--primary);
+    background-color: var(--secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@ body {
 hr {
     height: 3vw;
     width: 100%;
-    background-color: var(--black);
+    background-color: var(--primary);
     border: none;
     position: absolute;
     top: 0;
@@ -65,11 +65,11 @@ hr {
 }
 
 #clock>:not(.colon):focus {
-    background-color: var(--dark-green);
+    background-color: var(--transparent);
 }
 
 #clock>:not(.colon):hover {
-    border: 0.35vw solid var(--dark-green);
+    border: 0.35vw solid var(--primary);
 }
 
 .invalid {
@@ -101,11 +101,11 @@ button {
 }
 
 button:hover {
-    border-bottom: 0.85vw solid var(--black);
+    border-bottom: 0.85vw solid var(--primary);
 }
 
 #start-button {
-    opacity: 0.5;
+    opacity: 0.3;
     cursor: not-allowed;
 }
 
